@@ -1,0 +1,16 @@
+C:\Projects\VisualStudio-Projects\Injector\Injector\bin\Debug\Injector.exe.config
+C:\Projects\VisualStudio-Projects\Injector\Injector\bin\Debug\Injector.exe
+C:\Projects\VisualStudio-Projects\Injector\Injector\bin\Debug\Injector.pdb
+C:\Projects\VisualStudio-Projects\Injector\Injector\bin\Debug\Injector.xml
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.vbprojAssemblyReference.cache
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.Form1.resources
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.Resources.resources
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.vbproj.GenerateResource.cache
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.vbproj.CoreCompileInputs.cache
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.exe
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.xml
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.pdb
+C:\Projects\VisualStudio-Projects\Injector\Injector\bin\Debug\Injector.exe.manifest
+C:\Projects\VisualStudio-Projects\Injector\Injector\bin\Debug\Injector.application
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.exe.manifest
+C:\Projects\VisualStudio-Projects\Injector\Injector\obj\Debug\Injector.application

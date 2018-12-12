@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Injector.exe" version="1.0.0.1" publicKeyToken="baf11395a1894e29" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Injector" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Injector.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Injector.exe" size="91632">
+      <assemblyIdentity name="Injector" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B/W+NbZ84fjihBzFDCHJQTg/cZ0CBrvh/40cKRuO2lg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Injector.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c922zfRb5ORzqEo8SDjt8Mx8lDMhGTWhqKcK/oileDM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=JYLES-PC\Jyles Coad-Ward" issuerKeyHash="4906622c5be6cae82d4ee7d709c18045a7847b42" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>vXuOMR83ZT2CEXsLNsWocAoX0BlRRhpmyJNOnyPu/UQ=</DigestValue></Reference></SignedInfo><SignatureValue>uK4jlUz2ACYuksMLCQcivtyBKFq35JlwrDbdVGt2UWYsDn/p+vOBIrJFqOR6BkxUlrYtTrWjInFg4wFnWvETR7JW1wb894xsuffH8ey2Uio2paEI3HEMWAxKLdkqxoQvf764SBRjxl4lOdc7jzUwpPUwqX6cWNW12bzl+ZF4Im0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y401ywKZ++iYFxQQoA43B+zHtJukzIUeeNGGLNMxeV5sJWlG98OkK5kBx8mErtdE6hInyGHvKpDTGNEygZpQr6uBRAEPrKqr37VL36qC0LV+iXPJAOs1ORHgW5YRTDohkgG3BOoCOE67ZhyYVHq/L6/XuDYPLxdDXItTMwmavW0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="44fdee239f4e93c8661a465119d0170a70a8c5360b7b11823d65371f318e7bbd" Description="" Url=""><as:assemblyIdentity name="Injector.exe" version="1.0.0.1" publicKeyToken="baf11395a1894e29" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JYLES-PC\Jyles Coad-Ward</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HdJWgeZHTRllsw8Q5C0YChGtNlDsLuDZ0pGi5h7LDnw=</DigestValue></Reference></SignedInfo><SignatureValue>FSrWxz5pjm1fZT4yzz5VMPd/vqPc8s1bn8jESaO8mSLJtKv24m2bpi4Qk7COnLgBcEuqP5iSqExeRBRRB3iCNLkfmeK0l5hDynOWAzt34q+Ojb/rDiokk1nrL/pgjsP6sAzSnmcfgm4Hkl3kYg1aZryHLWohthbC56Z2251K2Oc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y401ywKZ++iYFxQQoA43B+zHtJukzIUeeNGGLNMxeV5sJWlG98OkK5kBx8mErtdE6hInyGHvKpDTGNEygZpQr6uBRAEPrKqr37VL36qC0LV+iXPJAOs1ORHgW5YRTDohkgG3BOoCOE67ZhyYVHq/L6/XuDYPLxdDXItTMwmavW0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQbO7KhhVslYZOUcpZweRmMzANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAASgBZAEwARQBTAC0AUABDAFwASgB5AGwAZQBzACAAQwBvAGEAZAAtAFcAYQByAGQwHhcNMTgxMjEyMDkzNjE0WhcNMTkxMjEyMTUzNjE0WjA7MTkwNwYDVQQDHjAASgBZAEwARQBTAC0AUABDAFwASgB5AGwAZQBzACAAQwBvAGEAZAAtAFcAYQByAGQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMuNNcsCmfvomBcUEKAONwfsx7SbpMyFHnjRhizTMXlebCVpRvfDpCuZAcfJhK7XROoSJ8hh7yqQ0xjRMoGaUK+rgUQBD6yqq9+1S9+qgtC1folzyQDrNTkR4FuWEUw6IZIBtwTqAjhOu2YcmFR6vy+v17g2Dy8XQ1yLUzMJmr1tAgMBAAEwDQYJKoZIhvcNAQELBQADgYEALUhSXefUVqt8OjRloWeNuBbqVVHs03cyDBv1l+UtcDWfbTnAgWzfOSeb9iKLvqdXAmAG8oS3FaVRU+qdRm9grYI5zan8lExavmWnUom1jZBB3xgiFFYw/HRFcMLQVoFeRFAvOSLILpd/atEWmwot+3ae8N82NVsEaFgzJkfunjQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
