@@ -9,3 +9,8 @@ C:\Projects\DLLInjector\DLLInjector\obj\Debug\DLLInjector.Form1.resources
 C:\Projects\DLLInjector\DLLInjector\obj\Debug\DLLInjector.exe
 C:\Projects\DLLInjector\DLLInjector\obj\Debug\DLLInjector.xml
 C:\Projects\DLLInjector\DLLInjector\obj\Debug\DLLInjector.pdb
+C:\Projects\DLLInjector\DLLInjector\obj\Debug\DLLInjector.vbprojAssemblyReference.cache
+C:\Projects\DLLInjector\DLLInjector\bin\Debug\DLLInjector.exe.manifest
+C:\Projects\DLLInjector\DLLInjector\bin\Debug\DLLInjector.application
+C:\Projects\DLLInjector\DLLInjector\obj\Debug\DLLInjector.exe.manifest
+C:\Projects\DLLInjector\DLLInjector\obj\Debug\DLLInjector.application

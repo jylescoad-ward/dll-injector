@@ -22,8 +22,17 @@ Partial Class Form1
 	'Do not modify it using the code editor.
 	<System.Diagnostics.DebuggerStepThrough()> _
 	Private Sub InitializeComponent()
+		Me.components = New System.ComponentModel.Container()
+		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
 		Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
 		Me.InjectorWindow = New DLLInjector.MephTheme()
+		Me.MephButton4 = New DLLInjector.MephButton()
+		Me.MephButton3 = New DLLInjector.MephButton()
+		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+		Me.Label2 = New System.Windows.Forms.Label()
+		Me.Label1 = New System.Windows.Forms.Label()
 		Me.MephTextBox1 = New DLLInjector.MephTextBox()
 		Me.MephProgressBar1 = New DLLInjector.MephProgressBar()
 		Me.DllLocationBox = New DLLInjector.MephTextBox()
@@ -31,16 +40,27 @@ Partial Class Form1
 		Me.MephButton2 = New DLLInjector.MephButton()
 		Me.MephButton1 = New DLLInjector.MephButton()
 		Me.InjectorWindow.SuspendLayout()
+		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'OpenFileDialog1
 		'
 		Me.OpenFileDialog1.FileName = "OpenFileDialog1"
 		'
+		'Timer1
+		'
+		'
 		'InjectorWindow
 		'
 		Me.InjectorWindow.AccentColor = System.Drawing.Color.Maroon
 		Me.InjectorWindow.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
+		Me.InjectorWindow.Controls.Add(Me.MephButton4)
+		Me.InjectorWindow.Controls.Add(Me.MephButton3)
+		Me.InjectorWindow.Controls.Add(Me.PictureBox2)
+		Me.InjectorWindow.Controls.Add(Me.PictureBox1)
+		Me.InjectorWindow.Controls.Add(Me.Label2)
+		Me.InjectorWindow.Controls.Add(Me.Label1)
 		Me.InjectorWindow.Controls.Add(Me.MephTextBox1)
 		Me.InjectorWindow.Controls.Add(Me.MephProgressBar1)
 		Me.InjectorWindow.Controls.Add(Me.DllLocationBox)
@@ -51,15 +71,75 @@ Partial Class Form1
 		Me.InjectorWindow.Location = New System.Drawing.Point(0, 0)
 		Me.InjectorWindow.Name = "InjectorWindow"
 		Me.InjectorWindow.Size = New System.Drawing.Size(343, 394)
-		Me.InjectorWindow.SubHeader = "created by a8764 [http://jyles.pw]"
+		Me.InjectorWindow.SubHeader = ""
 		Me.InjectorWindow.TabIndex = 0
 		Me.InjectorWindow.Text = "s1mple injektor"
+		'
+		'MephButton4
+		'
+		Me.MephButton4.BackColor = System.Drawing.Color.Transparent
+		Me.MephButton4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+		Me.MephButton4.Location = New System.Drawing.Point(173, 341)
+		Me.MephButton4.Name = "MephButton4"
+		Me.MephButton4.Size = New System.Drawing.Size(75, 23)
+		Me.MephButton4.TabIndex = 11
+		Me.MephButton4.Text = "Play Music"
+		'
+		'MephButton3
+		'
+		Me.MephButton3.BackColor = System.Drawing.Color.Transparent
+		Me.MephButton3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+		Me.MephButton3.Location = New System.Drawing.Point(254, 341)
+		Me.MephButton3.Name = "MephButton3"
+		Me.MephButton3.Size = New System.Drawing.Size(76, 23)
+		Me.MephButton3.TabIndex = 10
+		Me.MephButton3.Text = "Stop Music"
+		'
+		'PictureBox2
+		'
+		Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+		Me.PictureBox2.Location = New System.Drawing.Point(-19, 35)
+		Me.PictureBox2.Name = "PictureBox2"
+		Me.PictureBox2.Size = New System.Drawing.Size(30, 21)
+		Me.PictureBox2.TabIndex = 9
+		Me.PictureBox2.TabStop = False
+		'
+		'PictureBox1
+		'
+		Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+		Me.PictureBox1.Location = New System.Drawing.Point(332, 36)
+		Me.PictureBox1.Name = "PictureBox1"
+		Me.PictureBox1.Size = New System.Drawing.Size(70, 21)
+		Me.PictureBox1.TabIndex = 8
+		Me.PictureBox1.TabStop = False
+		'
+		'Label2
+		'
+		Me.Label2.AutoSize = True
+		Me.Label2.BackColor = System.Drawing.Color.Transparent
+		Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+		Me.Label2.Location = New System.Drawing.Point(342, 39)
+		Me.Label2.Name = "Label2"
+		Me.Label2.Size = New System.Drawing.Size(210, 13)
+		Me.Label2.TabIndex = 7
+		Me.Label2.Text = "Music by LSHChiptunes // Made by a8764"
+		'
+		'Label1
+		'
+		Me.Label1.AutoSize = True
+		Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLight
+		Me.Label1.Location = New System.Drawing.Point(342, 372)
+		Me.Label1.Name = "Label1"
+		Me.Label1.Size = New System.Drawing.Size(1301, 13)
+		Me.Label1.TabIndex = 6
+		Me.Label1.Text = resources.GetString("Label1.Text")
+		Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		'
 		'MephTextBox1
 		'
 		Me.MephTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
 		Me.MephTextBox1.ForeColor = System.Drawing.Color.Silver
-		Me.MephTextBox1.Location = New System.Drawing.Point(13, 362)
+		Me.MephTextBox1.Location = New System.Drawing.Point(13, 341)
 		Me.MephTextBox1.MaxLength = 32767
 		Me.MephTextBox1.MultiLine = False
 		Me.MephTextBox1.Name = "MephTextBox1"
@@ -73,7 +153,7 @@ Partial Class Form1
 		'MephProgressBar1
 		'
 		Me.MephProgressBar1.BackColor = System.Drawing.Color.Transparent
-		Me.MephProgressBar1.Location = New System.Drawing.Point(12, 332)
+		Me.MephProgressBar1.Location = New System.Drawing.Point(13, 312)
 		Me.MephProgressBar1.Maximum = 100
 		Me.MephProgressBar1.Name = "MephProgressBar1"
 		Me.MephProgressBar1.ShowPercentage = True
@@ -101,6 +181,7 @@ Partial Class Form1
 		'
 		Me.MephComboBox1.BackColor = System.Drawing.Color.Transparent
 		Me.MephComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+		Me.MephComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 		Me.MephComboBox1.Font = New System.Drawing.Font("Verdana", 8.0!)
 		Me.MephComboBox1.ForeColor = System.Drawing.Color.Silver
 		Me.MephComboBox1.FormattingEnabled = True
@@ -140,10 +221,15 @@ Partial Class Form1
 		Me.ClientSize = New System.Drawing.Size(343, 394)
 		Me.Controls.Add(Me.InjectorWindow)
 		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+		Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
 		Me.Name = "Form1"
-		Me.Text = "Form1"
+		Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+		Me.Text = "s1mple injektor"
 		Me.TransparencyKey = System.Drawing.Color.Fuchsia
 		Me.InjectorWindow.ResumeLayout(False)
+		Me.InjectorWindow.PerformLayout()
+		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -155,4 +241,11 @@ Partial Class Form1
 	Friend WithEvents MephButton1 As MephButton
 	Friend WithEvents MephProgressBar1 As MephProgressBar
 	Friend WithEvents MephTextBox1 As MephTextBox
+	Friend WithEvents Label1 As Label
+	Friend WithEvents Timer1 As Timer
+	Friend WithEvents Label2 As Label
+	Friend WithEvents PictureBox1 As PictureBox
+	Friend WithEvents PictureBox2 As PictureBox
+	Friend WithEvents MephButton4 As MephButton
+	Friend WithEvents MephButton3 As MephButton
 End Class

@@ -1,4 +1,6 @@
 ﻿Public Class Form1
+
+
 	Public Declare Function VirtualAllocEx Lib "kernel32" (ByVal hProcess As Integer, ByVal lpAddress As Integer, ByVal dwSize As Integer, ByVal flAllocationType As Integer, ByVal flProtect As Integer) As Integer
 	Public Const MEM_COMMIT = 4096, PAGE_EXECUTE_READWRITE = &H40
 	Public Declare Function WriteProcessMemory Lib "kernel32" (ByVal hProcess As Integer, ByVal lpBaseAddress As Integer, ByVal lpBuffer As Byte(), ByVal nSize As Integer, ByRef lpNumberOfBytesWritten As Integer) As Integer
@@ -6,6 +8,26 @@
 	Private Declare Function GetModuleHandle Lib "Kernel32" Alias "GetModuleHandleA" (ByVal lpModuleName As String) As Integer
 	Public Declare Function CreateRemoteThread Lib "kernel32" (ByVal hProcess As Integer, ByVal lpThreadAttributes As Integer, ByVal dwStackSize As Integer, ByVal lpStartAddress As Integer, ByVal lpParameter As Integer, ByVal dwCreationFlags As Integer, ByRef lpThreadId As Integer) As Integer
 	Public DllPath As String
+
+	Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+		Label1.AutoSize = True
+		Label2.AutoSize = True
+		Timer1.Start()
+		DownloadBGMusic()
+	End Sub
+
+	Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+		If Label1.Right < 0 Then
+			Label1.Left = Me.ClientSize.Width
+		Else
+			Label1.Left -= 5
+		End If
+		If Label2.Right < 0 Then
+			Label2.Left = Me.ClientSize.Width
+		Else
+			Label2.Left -= 5
+		End If
+	End Sub
 
 	Private Sub MephButton2_Click_1(sender As Object, e As EventArgs) Handles MephButton2.Click
 		OpenFileDialog1.Title = "Select a DLL File to Inject"
@@ -64,6 +86,36 @@
 		MsgBox("Injection Completed")
 		MephTextBox1.Text = "Injection Completed"
 		MephProgressBar1.Value = "100"
+	End Sub
+
+	Sub DownloadBGMusic()
+
+		If System.IO.File.Exists("C:\Users\Public\Downloads\injector-music.wav") Then
+			PlayLoopingBackgroundSoundResource()
+		Else
+			My.Computer.Network.DownloadFile(
+	"http://server.jyles.pw/files/music/wav/ReloadedLauncher%2310.wav",
+	"C:\Users\Public\Downloads\injector-music.wav")
+			PlayLoopingBackgroundSoundResource()
+		End If
+	End Sub
+
+	Sub PlayLoopingBackgroundSoundResource()
+
+		If System.IO.File.Exists("C:\Users\Public\Downloads\injector-music.wav") Then
+			My.Computer.Audio.Play("C:\Users\Public\Downloads\injector-music.wav",
+			AudioPlayMode.BackgroundLoop)
+		Else
+			PlayLoopingBackgroundSoundResource()
+		End If
+	End Sub
+
+	Sub StopBackgroundSound()
+		My.Computer.Audio.Stop()
+	End Sub
+
+	Private Sub MephButton3_Click(sender As Object, e As EventArgs) Handles MephButton3.Click
+		StopBackgroundSound()
 	End Sub
 
 	Private Sub ComboBoxDropDown(ByVal sender As Object, ByVal e As System.EventArgs) Handles MephComboBox1.DropDown

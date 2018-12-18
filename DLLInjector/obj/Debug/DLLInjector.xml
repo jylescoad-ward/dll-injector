@@ -22,5 +22,10 @@ DLLInjector
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:DLLInjector.My.Resources.Resources.music">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
 </members>
 </doc>
